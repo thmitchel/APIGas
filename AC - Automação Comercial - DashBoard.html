@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" http-equiv="refresh" content="60;url=http://grupoapigas.pythonanywhere.com/mostra";>
+    <style>
+        textarea:focus, input:focus, select:focus {
+            box-shadow: 0 0 0 0;
+            border: 0 none;
+            outline: 0;
+        }
+            input, textarea, select {
+            outline: 0;
+        }
+    </style>
+
+    <center>
+        <title> AC - Automação Comercial - DashBoard </title>
+    </center>
+</head>
+<body style="background-color:rgba(255, 255, 255, 0.699);">
+    <center>
+        <h1>#===== APIgás =====#</h1>
+        <h3>Concentração da Última Leitura</h3>
+
+        <form  method="get">
+            <div>Temperatura =
+            <input type="text" id ="temperatura" name="temperatura" value='{{t1}}' readonly><br>
+            </div>
+            <div>Concentração =
+            <input type="text" id ="concentracao" name="concentracao" value='{{c1}}' readonly><br>
+            </div>
+            <div>Umidade =
+            <input type="text" id ="umidade" name="umidade" value='{{u1}}' readonly><br>
+            </div>
+            <div>Data =
+            <input type="text" id ="data" name="data" value='{{d1}}' readonly><br>
+            </div>
+            <div>Hora =
+            <input type="text" id ="hora" name="hora" value='{{h1}}' readonly><br>
+            </div>
+            <br>
+
+            <div class="button">
+                <button style="margin-top: 5px;" type="submit">Atualizar</button>
+            </div>
+        </form>
+    </center>
+</html>
